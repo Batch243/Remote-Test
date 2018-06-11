@@ -39,9 +39,9 @@ def sort_by_department(product):
 products = sorted(products, key=sort_by_name)
 
 #PRINTING NAMES AND PRICES
-#for product in products:
-    #price = ' (${0:.2f})'.format(product ["price"])
-    #print(" + " + product["name"] + price)
+for product in products:
+    price = ' (${0:.2f})'.format(product ["price"])
+    print(" + " + product["name"] + price)
 
 #CREATING THE DEPARTMENT LIST - REMOVE DUPES AND SORT
 departments = []
