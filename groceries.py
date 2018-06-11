@@ -52,10 +52,10 @@ departments = list(departments)
 departments = sorted(departments)
 
 #PRINT DEPARTMENT TITLE
-#department_count_message = "THERE ARE " + str(len(departments)) + " DEPARTMENTS:"
-#print("-------------")
-#print(department_count_message)
-#print("-------------")
+department_count_message = "THERE ARE " + str(len(departments)) + " DEPARTMENTS:"
+print("-------------")
+print(department_count_message)
+print("-------------")
 
 #FUNCTION TO LOOKUP PRODUCTS BELONGING TO AN APARTMENT
 def products_in_departments(dept_name):
@@ -67,9 +67,9 @@ def products_in_departments(dept_name):
 # or can use return [p for p in products if p["department"] == dept_name]
 
 # PRINT DEPARTMENTS AND CAPITALIZE
-#for d in departments:
-    #associated_products = products_in_departments(d)
-    #label = "products"
-    #if len(associated_products) == 1:
-    #    label = "product"
-#    print(" + " + d.title() + " (" + str(len(associated_products)) + " " + label + ")")
+for d in departments:
+    associated_products = products_in_departments(d)
+    label = "products"
+    if len(associated_products) == 1:
+        label = "product"
+    print(" + " + d.title() + " (" + str(len(associated_products)) + " " + label + ")")
